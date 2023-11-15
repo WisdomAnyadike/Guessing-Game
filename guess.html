@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <legend id="legend"> <button onclick="minimize()"> - </button> <button onclick="maximize()">b </button>  <button onclick="cancel()"> x </button></legend>
+
+    <legend id="legend"> <button onclick="minimize()"> <iconify-icon icon="pepicons-pop:line-x" style="color: #626262;" width="16"></iconify-icon> </button> <button onclick="maximize()"><iconify-icon icon="ri:square-line" style="color: #626262;" width="16"></iconify-icon></button>  <button onclick="cancel()"> <iconify-icon icon="heroicons-solid:x" style="color: #626262;" width="16"></iconify-icon></button></legend>
     <div id="container"> 
      
     <section>
@@ -30,10 +31,11 @@
   <button onclick="guess(8)"> 8 </button>
   <button onclick="guess(9)"> 9 </button>
   <button onclick="guess(10)"> 10 </button>
-  <button onclick="Del()"> Del </button>
+  <button onclick="Del()" id="del"> <iconify-icon icon="material-symbols:refresh" style="color: #626262;" width="16"></iconify-icon> </button>
 </main>
   <p>
-  <button onclick="guessNum()"> Guess </button>
+  <button onclick="guessNum()"  > Guess </button>
+  <b>Score:<i id="score"> 0 </i></b>
 </p>
 
 </div>
@@ -41,3 +43,4 @@
 </body>
 </html>
 <script src="guess.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
